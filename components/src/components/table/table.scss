@@ -25,6 +25,19 @@
     }
   }
 
+  // Fix that works for css&html version only
+  .sdds-table__header {
+    .sdds-table__header-cell {
+      &:first-child {
+        border-top-left-radius: 4px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 4px;
+      }
+    }
+  }
+
   .sdds-table__header {
     .sdds-table__header-cell,
     ::slotted(sdds-header-cell) {
